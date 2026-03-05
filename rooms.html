@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms & Suites | The Kandyan Villa</title>
+    <meta name="description"
+        content="Discover elegantly designed luxury rooms and suites at The Kandyan Villa. Enjoy panoramic views of Heerassagala, Kandy.">
+    <!-- Tailwind CSS (via CDN with custom config) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind.config.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-kv-bg text-kv-dark antialiased">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-effect transition-all duration-300 py-2" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <img src="images/logo.jpg" alt="The Kandyan Villa Logo"
+                            class="h-12 md:h-14 w-auto rounded-xl mix-blend-multiply">
+                        <span class="font-playfair text-xl md:text-2xl font-bold text-kv-green">The Kandyan Villa</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-600 hover:text-kv-gold transition-colors">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-kv-gold transition-colors">About Us</a>
+                    <a href="rooms.html" class="text-kv-green font-medium hover:text-kv-gold transition-colors">Rooms &
+                        Suites</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-kv-gold transition-colors">Contact</a>
+                    <a href="booking.html"
+                        class="bg-kv-green text-white px-6 py-2 rounded-full hover:bg-kv-green-light transition-colors transform hover:-translate-y-0.5 whitespace-nowrap">Book
+                        Now</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-kv-green hover:text-kv-gold focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white absolute w-full shadow-lg border-t border-gray-100">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="index.html" class="block px-3 py-2 text-gray-600 hover:text-kv-green">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-gray-600 hover:text-kv-green">About Us</a>
+                <a href="rooms.html" class="block px-3 py-2 text-kv-green font-medium">Rooms & Suites</a>
+                <a href="contact.html" class="block px-3 py-2 text-gray-600 hover:text-kv-green">Contact</a>
+                <a href="booking.html" class="block px-3 py-2 mt-4 text-center bg-kv-green text-white rounded-md">Book
+                    Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="images/b_main.jpg" alt="Rooms Header Background" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 page-header-overlay"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto opacity-0 animate-fade-in-up">
+            <h1 class="text-4xl md:text-6xl font-playfair font-bold text-white mb-4">Accommodations</h1>
+            <div class="flex items-center justify-center gap-2 text-gray-300 text-sm">
+                <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                <span><i class="fa-solid fa-chevron-right text-xs"></i></span>
+                <span class="text-kv-gold">Rooms & Suites</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Rooms List Section -->
+    <section class="py-24 bg-kv-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 opacity-0 animate-on-scroll" data-animation="fade-in-up">
+                <p class="text-kv-gold font-medium tracking-widest uppercase mb-2">Luxury Stays</p>
+                <h2 class="text-3xl md:text-4xl font-playfair font-bold text-kv-dark mb-4">Select Your Perfect Room</h2>
+                <div class="w-24 h-1 bg-kv-gold mx-auto mb-6"></div>
+                <p class="max-w-2xl mx-auto text-gray-600">Wake up refreshed and ready to explore Kandy, or simply relax
+                    and take in the beautiful mountain views from the comfort of our elegantly appointed rooms.</p>
+            </div>
+
+            <div class="space-y-16">
+                <!-- Room 1 (Right align image on desktop) -->
+                <div class="flex flex-col lg:flex-row gap-10 items-center bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 opacity-0 animate-on-scroll"
+                    data-animation="fade-in-up">
+                    <div class="w-full lg:w-1/2 h-80 lg:h-auto self-stretch">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/320694510.jpg?k=84945ed31c57ff19772a0047ecc83523a9ac694a9cb0737d815a4df9fb1839f5&o="
+                            alt="Deluxe Double Room" class="w-full h-full object-cover" data-kv-img="room_double">
+                    </div>
+                    <div class="w-full lg:w-1/2 p-8 lg:p-12">
+                        <div
+                            class="inline-block bg-kv-green/10 text-kv-green px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase mb-4">
+                            Mountain View</div>
+                        <h3 class="text-3xl font-playfair font-bold mb-4 text-kv-dark">Deluxe Double Room</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">A beautifully designed haven offering spacious
+                            comfort and serene aesthetics. Featuring a private balcony with panoramic views of the
+                            scenic Kandy hills, this room comes equipped with all you need for an unforgettable stay.
+                        </p>
+
+                        <div class="grid grid-cols-2 gap-4 mb-8 text-sm text-gray-600">
+                            <div class="flex items-center gap-3"><i class="fa-solid fa-user-group text-kv-gold w-5"></i>
+                                2 Adults</div>
+                            <div class="flex items-center gap-3"><i class="fa-solid fa-bed text-kv-gold w-5"></i> 1
+                                Double Bed</div>
+                            <div class="flex items-center gap-3"><i class="fa-solid fa-tv text-kv-gold w-5"></i>
+                                Flat-screen TV</div>
+                            <div class="flex items-center gap-3"><i class="fa-solid fa-wifi text-kv-gold w-5"></i> Free
+                                High-speed WiFi</div>
+                            <div class="flex items-center gap-3"><i class="fa-solid fa-mug-hot text-kv-gold w-5"></i>
+                                Tea/Coffee Maker</div>
+                            <div class="flex items-center gap-3"><i class="fa-solid fa-wind text-kv-gold w-5"></i> Air
+                                Conditioning</div>
+                        </div>
+
+                        <div
+                            class="flex flex-col sm:flex-row items-center justify-between border-t border-gray-100 pt-6">
+                            <div class="text-2xl font-bold font-playfair text-kv-green mb-4 sm:mb-0"
+                                data-room-price="double">From LKR
+                                25,193<span class="text-sm text-gray-500 font-sans font-normal"> / night</span></div>
+                            <a href="booking.html"
+                                class="bg-kv-green text-white px-8 py-3 rounded-full font-medium hover:bg-kv-green-light transition-colors transform hover:-translate-y-1 w-full sm:w-auto text-center">Book
+                                This Room</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Room 1.5: Deluxe Twin Room -->
+                <div class="flex flex-col lg:flex-row gap-10 items-center bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 opacity-0 animate-on-scroll"
+                    data-animation="fade-in-up">
+                    <div class="w-full lg:w-1/2 p-8 lg:p-12 order-2 lg:order-1">
+                        <div
+                            class="inline-block bg-kv-green/10 text-kv-green px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase mb-4">
+                            Garden / Pool View</div>
+                        <h3 class="text-3xl font-playfair font-bold mb-4 text-kv-dark">Deluxe Twin Room</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">Perfect for friends or colleagues sharing, our
+                            Deluxe Twin Room offers the same high standards of comfort as our Double rooms, with two
+                            separate single beds and lovely views of the lush Kandyan scenery.</p>
+
+                        <div class="grid grid-cols-2 gap-4 mb-8 text-sm text-gray-600">
+                            <div class="flex items-center gap-3"><i class="fa-solid fa-user-group text-kv-gold w-5"></i>
+                                2 Guests</div>
+                            <div class="flex items-center gap-3"><i class="fa-solid fa-bed text-kv-gold w-5"></i> 2
+                                Single Beds</div>
+                            <div class="flex items-center gap-3"><i class="fa-solid fa-bath text-kv-gold w-5"></i>
+                                Private Bathroom with Bath</div>
+                            <div class="flex items-center gap-3"><i class="fa-solid fa-wifi text-kv-gold w-5"></i> Free
+                                High-speed WiFi</div>
+                            <div class="flex items-center gap-3"><i class="fa-solid fa-mug-hot text-kv-gold w-5"></i>
+                                Tea/Coffee Maker</div>
+                            <div class="flex items-center gap-3"><i class="fa-solid fa-wind text-kv-gold w-5"></i> Air
+                                Conditioning</div>
+                        </div>
+
+                        <div
+                            class="flex flex-col sm:flex-row items-center justify-between border-t border-gray-100 pt-6">
+                            <div class="text-2xl font-bold font-playfair text-kv-green mb-4 sm:mb-0"
+                                data-room-price="twin">From LKR
+                                27,750<span class="text-sm text-gray-500 font-sans font-normal"> / night</span></div>
+                            <a href="booking.html"
+                                class="bg-kv-green text-white px-8 py-3 rounded-full font-medium hover:bg-kv-green-light transition-colors transform hover:-translate-y-1 w-full sm:w-auto text-center">Book
+                                This Room</a>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-1/2 h-80 lg:h-auto self-stretch order-1 lg:order-2">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/320694523.jpg?k=2935aa0783019ba68744a012ce8b79e388053aab180c6c1026d975eda6f4918d&o="
+                            alt="Deluxe Twin Room" class="w-full h-full object-cover" data-kv-img="room_twin">
+                    </div>
+                </div>
+
+                <!-- Room 2 (Left align image on desktop via order-last for text) -->
+                <div class="flex flex-col lg:flex-row gap-10 items-center bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 opacity-0 animate-on-scroll"
+                    data-animation="fade-in-up">
+                    <div class="w-full lg:w-1/2 p-8 lg:p-12 order-2 lg:order-1">
+                        <div
+                            class="inline-block bg-kv-green/10 text-kv-green px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase mb-4">
+                            Family Friendly</div>
+                        <h3 class="text-3xl font-playfair font-bold mb-4 text-kv-dark">Deluxe Triple Room</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">Perfect for families or a small group of friends
+                            traveling together. This overly spacious 33 m² room gives everyone room to relax. Enjoy the
+                            tranquil atmosphere alongside modern conveniences.</p>
+
+                        <div class="grid grid-cols-2 gap-4 mb-8 text-sm text-gray-600">
+                            <div class="flex items-center gap-3"><i class="fa-solid fa-user-group text-kv-gold w-5"></i>
+                                Up to 3 Adults/Children</div>
+                            <div class="flex items-center gap-3"><i class="fa-solid fa-bed text-kv-gold w-5"></i> 1
+                                Double + 1 Single Bed</div>
+                            <div class="flex items-center gap-3"><i class="fa-solid fa-shower text-kv-gold w-5"></i>
+                                Premium Bath Amenities</div>
+                            <div class="flex items-center gap-3"><i class="fa-solid fa-wifi text-kv-gold w-5"></i> Free
+                                High-speed WiFi</div>
+                            <div class="flex items-center gap-3"><i class="fa-solid fa-mug-hot text-kv-gold w-5"></i>
+                                Tea/Coffee Maker</div>
+                            <div class="flex items-center gap-3"><i class="fa-solid fa-wind text-kv-gold w-5"></i> Air
+                                Conditioning</div>
+                        </div>
+
+                        <div
+                            class="flex flex-col sm:flex-row items-center justify-between border-t border-gray-100 pt-6">
+                            <div class="text-2xl font-bold font-playfair text-kv-green mb-4 sm:mb-0"
+                                data-room-price="triple">From LKR
+                                30,368<span class="text-sm text-gray-500 font-sans font-normal"> / night</span></div>
+                            <a href="booking.html"
+                                class="bg-kv-green text-white px-8 py-3 rounded-full font-medium hover:bg-kv-green-light transition-colors transform hover:-translate-y-1 w-full sm:w-auto text-center">Book
+                                This Room</a>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-1/2 h-80 lg:h-auto self-stretch order-1 lg:order-2">
+                        <img src="images/b_bedroom2.jpg" alt="Family Triple Room" class="w-full h-full object-cover"
+                            data-kv-img="room_triple">
+                    </div>
+                </div>
+
+                <!-- Room 3 -->
+                <div class="flex flex-col lg:flex-row gap-10 items-center bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 opacity-0 animate-on-scroll"
+                    data-animation="fade-in-up">
+                    <div class="w-full lg:w-1/2 self-stretch flex flex-col gap-2">
+                        <div class="h-64 lg:h-80 w-full overflow-hidden lg:rounded-tl-3xl">
+                            <img src="images/villa-1.jpg" alt="Three bedrooms Villa" id="main-villa-img"
+                                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                                data-kv-img="room_villa">
+                        </div>
+                        <div class="grid grid-cols-4 gap-2 h-20 lg:h-24 px-2 lg:px-0 lg:pl-2 pb-2">
+                            <div class="overflow-hidden rounded-bl-2xl lg:rounded-bl-3xl lg:rounded-none"><img
+                                    src="images/villa-2.jpg" alt="Villa detail 1"
+                                    onclick="document.getElementById('main-villa-img').src=this.src"
+                                    class="w-full h-full object-cover cursor-pointer hover:opacity-80 transition-opacity">
+                            </div>
+                            <div class="overflow-hidden"><img src="images/villa-3.jpg" alt="Villa detail 2"
+                                    onclick="document.getElementById('main-villa-img').src=this.src"
+                                    class="w-full h-full object-cover cursor-pointer hover:opacity-80 transition-opacity">
+                            </div>
+                            <div class="overflow-hidden"><img src="images/villa-4.jpg" alt="Villa detail 3"
+                                    onclick="document.getElementById('main-villa-img').src=this.src"
+                                    class="w-full h-full object-cover cursor-pointer hover:opacity-80 transition-opacity">
+                            </div>
+                            <div class="overflow-hidden rounded-br-2xl lg:rounded-br-none"><img src="images/villa-5.jpg"
+                                    alt="Villa detail 4"
+                                    onclick="document.getElementById('main-villa-img').src=this.src"
+                                    class="w-full h-full object-cover cursor-pointer hover:opacity-80 transition-opacity">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-1/2 p-8 lg:p-12 lg:pl-0">
+                        <div
+                            class="inline-block bg-kv-gold text-kv-dark px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase mb-4">
+                            Premium Villa</div>
+                        <h3 class="text-3xl font-playfair font-bold mb-4 text-kv-dark">Three bedrooms Villa</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">Our ultimate private luxury offering. This
+                            standalone villa provides
+                            multiple bedrooms, a spacious separate seating area, extravagant furnishings, and an
+                            expansive private environment
+                            delivering the finest VIP feel. Ideal for large families or exclusive luxury group retreats.
+                        </p>
+
+                        <div class="grid grid-cols-2 gap-4 mb-8 text-sm text-gray-600">
+                            <div class="flex items-center gap-3"><i class="fa-solid fa-user-group text-kv-gold w-5"></i>
+                                Up to 6 Guests</div>
+                            <div class="flex items-center gap-3"><i class="fa-solid fa-bed text-kv-gold w-5"></i> 3
+                                Bedrooms</div>
+                            <div class="flex items-center gap-3"><i class="fa-solid fa-couch text-kv-gold w-5"></i>
+                                Separate Lounge/Dining</div>
+                            <div class="flex items-center gap-3"><i class="fa-solid fa-bath text-kv-gold w-5"></i>
+                                Multiple Bathrooms</div>
+                            <div class="flex items-center gap-3"><i class="fa-solid fa-house text-kv-gold w-5"></i>
+                                Private Space</div>
+                            <div class="flex items-center gap-3"><i class="fa-solid fa-wind text-kv-gold w-5"></i> Air
+                                Conditioning</div>
+                        </div>
+
+                        <div
+                            class="flex flex-col sm:flex-row items-center justify-between border-t border-gray-100 pt-6">
+                            <div class="text-2xl font-bold font-playfair text-kv-green mb-4 sm:mb-0"
+                                data-room-price="villa">From LKR
+                                75,067<span class="text-sm text-gray-500 font-sans font-normal"> / night</span></div>
+                            <a href="booking.html"
+                                class="bg-kv-green text-white px-8 py-3 rounded-full font-medium hover:bg-kv-green-light transition-colors transform hover:-translate-y-1 w-full sm:w-auto text-center">Book
+                                This Villa</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-kv-dark text-white pt-20 pb-10 border-t-4 border-kv-gold">
+        <!-- Exact Same Footer -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-16">
+                <div>
+                    <div class="mb-6 inline-block bg-white p-2 pr-4 rounded-2xl shadow-lg">
+                        <a href="index.html" class="flex items-center gap-3">
+                            <img src="images/logo.jpg" alt="The Kandyan Villa Logo" class="h-14 w-auto rounded-xl">
+                            <span class="font-playfair text-xl font-bold text-kv-green">The Kandyan Villa</span>
+                        </a>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">A serene oasis in the hills of Heerassagala,
+                        offering luxury accommodation and traditional Sri Lankan hospitality just minutes from Kandy
+                        city center.</p>
+                    <div class="flex gap-4">
+                        <a href="https://www.facebook.com/share/1C2njgy4cU/" target="_blank" rel="noopener noreferrer"
+                            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-kv-gold hover:text-kv-dark transition-colors text-white"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-kv-gold hover:text-kv-dark transition-colors text-white"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-kv-gold hover:text-kv-dark transition-colors text-white"><i
+                                class="fa-brands fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-playfair font-bold mb-6 border-b border-white/20 pb-2 inline-block">Quick
+                        Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html"
+                                class="text-gray-400 hover:text-kv-gold transition-colors text-sm">Home</a></li>
+                        <li><a href="about.html"
+                                class="text-gray-400 hover:text-kv-gold transition-colors text-sm">About Us</a></li>
+                        <li><a href="rooms.html"
+                                class="text-gray-400 hover:text-kv-gold transition-colors text-sm">Rooms & Suites</a>
+                        </li>
+                        <li><a href="contact.html"
+                                class="text-gray-400 hover:text-kv-gold transition-colors text-sm">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-playfair font-bold mb-6 border-b border-white/20 pb-2 inline-block">Nearby
+                        Attractions</h4>
+                    <ul class="space-y-3">
+                        <li><span class="text-gray-400 text-sm block">Ceylon Tea Museum (2.8 km)</span></li>
+                        <li><span class="text-gray-400 text-sm block">Temple of the Tooth Relic (4.0 km)</span></li>
+                        <li><span class="text-gray-400 text-sm block">Kandy Lake (4.0 km)</span></li>
+                        <li><span class="text-gray-400 text-sm block">Royal Botanic Gardens (6.0 km)</span></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-playfair font-bold mb-6 border-b border-white/20 pb-2 inline-block">Contact
+                        Info</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot mt-1 text-kv-gold"></i>
+                            <span class="text-gray-400 text-sm">532/30, Heerassagala Road, Heerassagala, Kandy, Sri
+                                Lanka</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-kv-gold"></i>
+                            <a href="tel:+94812208208"
+                                class="text-gray-400 hover:text-kv-gold transition-colors text-sm">0812 208 208</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-kv-gold"></i>
+                            <a href="mailto:kandyanvilla111@gmail.com"
+                                class="text-gray-400 hover:text-kv-gold transition-colors text-sm">kandyanvilla111@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 text-sm">&copy; <span id="current-year"></span> The Kandyan Villa. All rights
+                    reserved. <a href="admin/login.html" class="opacity-0 hover:opacity-100 transition-opacity ml-2"
+                        title="Admin Portal"><i class="fa-solid fa-lock text-[10px]"></i></a></p>
+                <div class="flex gap-4">
+                    <a href="privacy.html" class="text-gray-500 hover:text-white text-sm">Privacy Policy</a>
+                    <a href="terms.html" class="text-gray-500 hover:text-white text-sm">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+
+    <!-- Admin Price Sync: reads prices from admin panel database -->
+    <script>
+        (function () {
+            const DB_KEY = 'kv_rooms';
+            const DEFAULTS = {
+                double: 25193,
+                twin: 27750,
+                triple: 30368,
+                villa: 75067
+            };
+
+            function loadPrices() {
+                try {
+                    const raw = localStorage.getItem(DB_KEY);
+                    if (!raw) return DEFAULTS;
+                    const rooms = JSON.parse(raw);
+                    const map = {};
+                    rooms.forEach(r => {
+                        if (r.id && r.pricePerNight) map[r.id] = r.pricePerNight;
+                    });
+                    return Object.assign({}, DEFAULTS, map);
+                } catch (e) { return DEFAULTS; }
+            }
+
+            function formatLKR(n) {
+                return 'LKR ' + Number(n).toLocaleString('en-LK');
+            }
+
+            const prices = loadPrices();
+
+            /* Target elements — data-room-price attributes */
+            document.querySelectorAll('[data-room-price]').forEach(el => {
+                const id = el.getAttribute('data-room-price');
+                if (prices[id] !== undefined) {
+                    el.textContent = 'From ' + formatLKR(prices[id]);
+                }
+            });
+        })();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Stay | The Kandyan Villa</title>
+    <meta name="description" content="Book your luxury stay at The Kandyan Villa in Kandy with secure online payment.">
+    <!-- Tailwind CSS (via CDN with custom config) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind.config.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-kv-bg text-kv-dark antialiased">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-effect transition-all duration-300 py-2" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <img src="images/logo.jpg" alt="The Kandyan Villa Logo"
+                            class="h-12 md:h-14 w-auto rounded-xl mix-blend-multiply">
+                        <span class="font-playfair text-xl md:text-2xl font-bold text-kv-green">The Kandyan Villa</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-600 hover:text-kv-gold transition-colors">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-kv-gold transition-colors">About Us</a>
+                    <a href="rooms.html" class="text-gray-600 hover:text-kv-gold transition-colors">Rooms & Suites</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-kv-gold transition-colors">Contact</a>
+                    <a href="booking.html"
+                        class="bg-kv-green text-white px-6 py-2 rounded-full hover:bg-kv-green-light transition-colors transform hover:-translate-y-0.5 whitespace-nowrap">Book
+                        Now</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-kv-green hover:text-kv-gold focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white absolute w-full shadow-lg border-t border-gray-100">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="index.html" class="block px-3 py-2 text-gray-600 hover:text-kv-green">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-gray-600 hover:text-kv-green">About Us</a>
+                <a href="rooms.html" class="block px-3 py-2 text-gray-600 hover:text-kv-green">Rooms & Suites</a>
+                <a href="contact.html" class="block px-3 py-2 text-gray-600 hover:text-kv-green">Contact</a>
+                <a href="booking.html" class="block px-3 py-2 mt-4 text-center bg-kv-green text-white rounded-md">Book
+                    Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="absolute inset-0 z-0 bg-kv-dark">
+            <img src="images/b_pool.jpg" alt="Booking Header Background" class="w-full h-full object-cover opacity-60"
+                data-kv-img="hero_home" />
+            <div class="absolute inset-0 page-header-overlay"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto opacity-0 animate-fade-in-up">
+            <h1 class="text-4xl md:text-6xl font-playfair font-bold text-white mb-4">Secure Checkout</h1>
+            <div class="flex items-center justify-center gap-2 text-gray-300 text-sm">
+                <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                <span><i class="fa-solid fa-chevron-right text-xs"></i></span>
+                <span class="text-kv-gold">Book Now</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="py-24 bg-kv-bg">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 opacity-0 animate-on-scroll" data-animation="fade-in-up">
+                <h2 class="text-3xl md:text-4xl font-playfair font-bold text-kv-dark mb-4">Complete Your Reservation
+                </h2>
+                <div class="w-24 h-1 bg-kv-gold mx-auto mb-6"></div>
+                <p class="max-w-2xl mx-auto text-gray-600">Please fill out your details below and securely complete your
+                    payment with PayPal to confirm your stay.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+
+                <!-- Booking Form Details -->
+                <div class="lg:col-span-2 bg-white rounded-3xl shadow-lg p-8 md:p-10 border border-gray-100 opacity-0 animate-on-scroll"
+                    data-animation="fade-in-up">
+                    <h3 class="text-2xl font-playfair font-bold text-kv-dark mb-6 border-b pb-4">Guest Details &
+                        Preferences</h3>
+                    <form id="booking-form" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="firstName" class="block text-sm font-medium text-gray-700 mb-2">First
+                                    Name</label>
+                                <input type="text" id="firstName" name="firstName" required
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-kv-green focus:border-kv-green outline-none transition-all"
+                                    placeholder="John">
+                            </div>
+                            <div>
+                                <label for="lastName" class="block text-sm font-medium text-gray-700 mb-2">Last
+                                    Name</label>
+                                <input type="text" id="lastName" name="lastName" required
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-kv-green focus:border-kv-green outline-none transition-all"
+                                    placeholder="Doe">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email
+                                    Address</label>
+                                <input type="email" id="email" name="email" required
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-kv-green focus:border-kv-green outline-none transition-all"
+                                    placeholder="john@example.com">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone
+                                    Number</label>
+                                <input type="tel" id="phone" name="phone" required
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-kv-green focus:border-kv-green outline-none transition-all"
+                                    placeholder="+1 234 567 890">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="checkin" class="block text-sm font-medium text-gray-700 mb-2">Check-in
+                                    Date</label>
+                                <input type="date" id="checkin" name="checkin" required
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-kv-green focus:border-kv-green outline-none transition-all">
+                            </div>
+                            <div>
+                                <label for="checkout" class="block text-sm font-medium text-gray-700 mb-2">Check-out
+                                    Date</label>
+                                <input type="date" id="checkout" name="checkout" required
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-kv-green focus:border-kv-green outline-none transition-all">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Select Room Type</label>
+                            <div class="space-y-3">
+                                <label
+                                    class="flex items-center p-4 border border-gray-200 rounded-xl cursor-pointer hover:border-kv-green transition-colors">
+                                    <input type="radio" name="roomType" value="25193"
+                                        class="text-kv-green focus:ring-kv-green w-5 h-5" required data-room-id="double"
+                                        onclick="updateTotal()">
+                                    <div class="ml-4 flex flex-1 justify-between items-center">
+                                        <span class="font-medium">Deluxe Double Room</span>
+                                        <span class="font-bold text-kv-green" data-room-price-display="double">LKR
+                                            25,193 / night</span>
+                                    </div>
+                                </label>
+                                <label
+                                    class="flex items-center p-4 border border-gray-200 rounded-xl cursor-pointer hover:border-kv-green transition-colors">
+                                    <input type="radio" name="roomType" value="27750"
+                                        class="text-kv-green focus:ring-kv-green w-5 h-5" required data-room-id="twin"
+                                        onclick="updateTotal()">
+                                    <div class="ml-4 flex flex-1 justify-between items-center">
+                                        <span class="font-medium">Deluxe Twin Room</span>
+                                        <span class="font-bold text-kv-green" data-room-price-display="twin">LKR
+                                            27,750 / night</span>
+                                    </div>
+                                </label>
+                                <label
+                                    class="flex items-center p-4 border border-gray-200 rounded-xl cursor-pointer hover:border-kv-green transition-colors">
+                                    <input type="radio" name="roomType" value="30368"
+                                        class="text-kv-green focus:ring-kv-green w-5 h-5" required data-room-id="triple"
+                                        onclick="updateTotal()">
+                                    <div class="ml-4 flex flex-1 justify-between items-center">
+                                        <span class="font-medium">Deluxe Triple Room</span>
+                                        <span class="font-bold text-kv-green" data-room-price-display="triple">LKR
+                                            30,368 / night</span>
+                                    </div>
+                                </label>
+                                <label
+                                    class="flex items-center p-4 border border-gray-200 rounded-xl cursor-pointer hover:border-kv-green transition-colors">
+                                    <input type="radio" name="roomType" value="75067"
+                                        class="text-kv-green focus:ring-kv-green w-5 h-5" required data-room-id="villa"
+                                        onclick="updateTotal()">
+                                    <div class="ml-4 flex flex-1 justify-between items-center">
+                                        <span class="font-medium">Three bedrooms Villa</span>
+                                        <span class="font-bold text-kv-green" data-room-price-display="villa">LKR 75,067
+                                            / night</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="requests" class="block text-sm font-medium text-gray-700 mb-2">Special Requests
+                                (Optional)</label>
+                            <textarea id="requests" name="requests" rows="3"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-kv-green focus:border-kv-green outline-none transition-all resize-none"
+                                placeholder="Any special needs, dietary requirements..."></textarea>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Order Summary & PayPal Button -->
+                <div class="bg-white rounded-3xl shadow-lg p-8 border border-gray-100 opacity-0 animate-on-scroll self-start sticky top-24"
+                    data-animation="fade-in-up">
+                    <h3 class="text-xl font-playfair font-bold text-kv-dark mb-6 border-b pb-4">Booking Summary</h3>
+
+                    <div class="space-y-4 mb-6 text-sm">
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Nights</span>
+                            <span id="summary-nights" class="font-medium text-kv-dark">0</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Room Rate / Night</span>
+                            <span id="summary-rate" class="font-medium text-kv-dark">LKR 0</span>
+                        </div>
+                        <div class="flex justify-between border-t pt-4">
+                            <span class="text-gray-600 font-bold">Subtotal</span>
+                            <span id="summary-subtotal" class="font-medium text-kv-dark">LKR 0</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Taxes & Fees (10%)</span>
+                            <span id="summary-taxes" class="font-medium text-kv-dark">LKR 0</span>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between items-center border-t border-gray-200 pt-6 mb-8">
+                        <span class="font-playfair text-xl font-bold text-kv-dark">Total Amount</span>
+                        <span id="summary-total" class="font-playfair text-2xl font-bold text-kv-green">LKR 0</span>
+                    </div>
+
+                    <!-- Replace "test" with your actual live PayPal Client ID -->
+                    <script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD"></script>
+
+                    <div id="paypal-button-container"
+                        class="opacity-50 pointer-events-none transition-opacity duration-300"></div>
+                    <p id="form-warning" class="text-xs text-red-500 mt-3 text-center">Please fill out all required
+                        fields and select dates to enable payment.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-kv-dark text-white pt-20 pb-10 border-t-4 border-kv-gold">
+        <!-- Exact Same Footer -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-16">
+                <div>
+                    <div class="mb-6 inline-block bg-white p-2 pr-4 rounded-2xl shadow-lg">
+                        <a href="index.html" class="flex items-center gap-3">
+                            <img src="images/logo.jpg" alt="The Kandyan Villa Logo" class="h-14 w-auto rounded-xl">
+                            <span class="font-playfair text-xl font-bold text-kv-green">The Kandyan Villa</span>
+                        </a>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">A serene oasis in the hills of Heerassagala,
+                        offering luxury accommodation and traditional Sri Lankan hospitality just minutes from Kandy
+                        city center.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-playfair font-bold mb-6 border-b border-white/20 pb-2 inline-block">Quick
+                        Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html"
+                                class="text-gray-400 hover:text-kv-gold transition-colors text-sm">Home</a></li>
+                        <li><a href="about.html"
+                                class="text-gray-400 hover:text-kv-gold transition-colors text-sm">About Us</a></li>
+                        <li><a href="rooms.html"
+                                class="text-gray-400 hover:text-kv-gold transition-colors text-sm">Rooms & Suites</a>
+                        </li>
+                        <li><a href="contact.html"
+                                class="text-gray-400 hover:text-kv-gold transition-colors text-sm">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-playfair font-bold mb-6 border-b border-white/20 pb-2 inline-block">Contact
+                        Info</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot mt-1 text-kv-gold"></i>
+                            <span class="text-gray-400 text-sm">532/30, Heerassagala Road, Kandy, Sri Lanka</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 text-sm">&copy; <span id="current-year"></span> The Kandyan Villa. All rights
+                    reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script>
+        // Set minimum dates for inputs
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('checkin').setAttribute('min', today);
+        document.getElementById('checkin').addEventListener('change', function () {
+            document.getElementById('checkout').setAttribute('min', this.value);
+            updateTotal();
+        });
+        document.getElementById('checkout').addEventListener('change', updateTotal);
+
+        const form = document.getElementById('booking-form');
+
+        form.addEventListener('input', checkFormValidity);
+
+        let finalTotal = 0;
+
+        function updateTotal() {
+            const checkin = new Date(document.getElementById('checkin').value);
+            const checkout = new Date(document.getElementById('checkout').value);
+            const roomRadios = document.getElementsByName('roomType');
+            let rate = 0;
+
+            for (let radio of roomRadios) {
+                if (radio.checked) rate = parseFloat(radio.value);
+            }
+
+            let nights = 0;
+            if (checkin && checkout && checkout > checkin) {
+                const diffTime = Math.abs(checkout - checkin);
+                nights = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+            }
+
+            document.getElementById('summary-nights').textContent = nights;
+            document.getElementById('summary-rate').textContent = 'LKR ' + rate;
+
+            const subtotal = rate * nights;
+            const taxes = subtotal * 0.10;
+            finalTotal = subtotal + taxes;
+
+            document.getElementById('summary-subtotal').textContent = 'LKR ' + subtotal.toFixed(2);
+            document.getElementById('summary-taxes').textContent = 'LKR ' + taxes.toFixed(2);
+            document.getElementById('summary-total').textContent = 'LKR ' + finalTotal.toFixed(2);
+
+            checkFormValidity();
+        }
+
+        function checkFormValidity() {
+            const isValid = form.checkValidity() && finalTotal > 0;
+            const paypalContainer = document.getElementById('paypal-button-container');
+            const warning = document.getElementById('form-warning');
+
+            if (isValid) {
+                paypalContainer.classList.remove('opacity-50', 'pointer-events-none');
+                warning.classList.add('hidden');
+            } else {
+                paypalContainer.classList.add('opacity-50', 'pointer-events-none');
+                warning.classList.remove('hidden');
+            }
+        }
+
+        // Initialize PayPal Buttons
+        paypal.Buttons({
+            createOrder: function (data, actions) {
+                // Set up the transaction details here
+                return actions.order.create({
+                    purchase_units: [{
+                        amount: {
+                            value: finalTotal.toFixed(2) // Final checkout price
+                        },
+                        description: 'The Kandyan Villa Room Booking'
+                    }]
+                });
+            },
+            onApprove: function (data, actions) {
+                // This function captures the funds from the transaction
+                return actions.order.capture().then(function (details) {
+                    // Show a success message to the buyer
+                    alert('Transaction completed successfully! Thank you ' + details.payer.name.given_name + '. Your room is confirmed.');
+                    // Typically, you would redirect to a success page here
+                    // window.location.href = "success.html";
+                });
+            },
+            onError: function (err) {
+                // Handle errors
+                console.error('PayPal Error:', err);
+                alert('We encountered an error processing your payment. Please try again.');
+            }
+        }).render('#paypal-button-container');
+    </script>
+    <script>
+        // Admin Price Sync
+        (function () {
+            const DB_KEY = 'kv_rooms';
+            const DEFAULTS = { double: 25193, twin: 27750, triple: 30368, villa: 75067 };
+
+            function loadPrices() {
+                try {
+                    const raw = localStorage.getItem(DB_KEY);
+                    if (!raw) return DEFAULTS;
+                    const rooms = JSON.parse(raw);
+                    const map = {};
+                    rooms.forEach(r => { if (r.id && r.pricePerNight) map[r.id] = r.pricePerNight; });
+                    return Object.assign({}, DEFAULTS, map);
+                } catch (e) { return DEFAULTS; }
+            }
+
+            function formatLKR(n) {
+                return 'LKR ' + Number(n).toLocaleString('en-LK');
+            }
+
+            const prices = loadPrices();
+
+            // 1. Update radio values
+            document.querySelectorAll('input[name="roomType"]').forEach(radio => {
+                const id = radio.getAttribute('data-room-id');
+                if (id && prices[id]) {
+                    radio.value = prices[id];
+                }
+            });
+
+            // 2. Update visible labels
+            document.querySelectorAll('[data-room-price-display]').forEach(label => {
+                const id = label.getAttribute('data-room-price-display');
+                if (id && prices[id]) {
+                    label.textContent = formatLKR(prices[id]) + ' / night';
+                }
+            });
+        })();
+    </script>
+</body>
+
+</html>

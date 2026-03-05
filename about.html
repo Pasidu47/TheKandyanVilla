@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | The Kandyan Villa</title>
+    <meta name="description"
+        content="Learn about The Kandyan Villa in Heerassagala, Kandy. A luxurious retreat offering Sri Rican hospitality, modern comforts, and stunning scenery.">
+    <!-- Tailwind CSS (via CDN with custom config) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind.config.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-kv-bg text-kv-dark antialiased">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-effect transition-all duration-300 py-2" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <img src="images/logo.jpg" alt="The Kandyan Villa Logo"
+                            class="h-12 md:h-14 w-auto rounded-xl mix-blend-multiply">
+                        <span class="font-playfair text-xl md:text-2xl font-bold text-kv-green">The Kandyan Villa</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-600 hover:text-kv-gold transition-colors">Home</a>
+                    <a href="about.html" class="text-kv-green font-medium hover:text-kv-gold transition-colors">About
+                        Us</a>
+                    <a href="rooms.html" class="text-gray-600 hover:text-kv-gold transition-colors">Rooms & Suites</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-kv-gold transition-colors">Contact</a>
+                    <a href="booking.html"
+                        class="bg-kv-green text-white px-6 py-2 rounded-full hover:bg-kv-green-light transition-colors transform hover:-translate-y-0.5 whitespace-nowrap">Book
+                        Now</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-kv-green hover:text-kv-gold focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white absolute w-full shadow-lg border-t border-gray-100">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="index.html" class="block px-3 py-2 text-gray-600 hover:text-kv-green">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-kv-green font-medium">About Us</a>
+                <a href="rooms.html" class="block px-3 py-2 text-gray-600 hover:text-kv-green">Rooms & Suites</a>
+                <a href="contact.html" class="block px-3 py-2 text-gray-600 hover:text-kv-green">Contact</a>
+                <a href="booking.html" class="block px-3 py-2 mt-4 text-center bg-kv-green text-white rounded-md">Book
+                    Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="images/b_main.jpg" alt="About Us Background" class="w-full h-full object-cover"
+                data-kv-img="about_hero" />
+            <div class="absolute inset-0 page-header-overlay"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto opacity-0 animate-fade-in-up">
+            <h1 class="text-4xl md:text-6xl font-playfair font-bold text-white mb-4">Our Story</h1>
+            <div class="flex items-center justify-center gap-2 text-gray-300 text-sm">
+                <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                <span><i class="fa-solid fa-chevron-right text-xs"></i></span>
+                <span class="text-kv-gold">About Us</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Our Philosophy -->
+    <section class="py-24 bg-kv-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="relative opacity-0 animate-on-scroll" data-animation="fade-in">
+                    <img src="images/b_garden.jpg" alt="Villa Heritage" class="rounded-2xl shadow-xl"
+                        data-kv-img="about_interior">
+                    <div
+                        class="absolute -bottom-8 -right-8 w-48 bg-white p-6 rounded-xl shadow-2xl hidden md:block border-t-4 border-kv-gold">
+                        <p class="text-4xl font-playfair font-bold text-kv-green mb-1">10+</p>
+                        <p class="text-sm text-gray-600 font-medium">Years of Hospitality Excellence</p>
+                    </div>
+                </div>
+                <div class="opacity-0 animate-on-scroll" data-animation="fade-in-up">
+                    <p class="text-kv-gold font-medium tracking-widest uppercase mb-2">Heritage</p>
+                    <h2 class="text-3xl md:text-4xl font-playfair font-bold text-kv-dark mb-6">Embracing the Spirit of
+                        Kandy</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">The Kandyan Villa was born out of a desire to share
+                        the timeless beauty of Kandy and true Sri Lankan hospitality with travelers from around the
+                        world. Nestled in the serene setting of Heerassagala, our property provides an escape into
+                        nature.</p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Our philosophy centers around providing personalized
+                        service while minimizing our footprint on the stunning natural environment that surrounds us.
+                        Every detail, from the locally sourced ingredients in our restaurant to the cultural aesthetics
+                        of our rooms, reflects the rich mosaic of Sri Rican heritage.</p>
+
+                    <ul class="space-y-4 mt-8">
+                        <li class="flex items-start gap-4">
+                            <i class="fa-solid fa-check text-kv-gold mt-1"></i>
+                            <span class="text-gray-700">Authentic Sri Lankan architecture and design elements</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <i class="fa-solid fa-check text-kv-gold mt-1"></i>
+                            <span class="text-gray-700">Eco-friendly practices and sustainable local sourcing</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <i class="fa-solid fa-check text-kv-gold mt-1"></i>
+                            <span class="text-gray-700">Warm, personalized service from our dedicated local team</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 opacity-0 animate-on-scroll" data-animation="fade-in-up">
+                <p class="text-kv-gold font-medium tracking-widest uppercase mb-2">Our Promise</p>
+                <h2 class="text-3xl md:text-4xl font-playfair font-bold text-kv-dark mb-4">Why Guests Choose Us</h2>
+                <div class="w-24 h-1 bg-kv-gold mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="text-center p-8 bg-kv-bg rounded-2xl border border-gray-100 opacity-0 animate-on-scroll hover-scale"
+                    data-animation="fade-in-up" style="animation-delay: 0.1s">
+                    <div
+                        class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-md">
+                        <i class="fa-solid fa-mountain-sun text-2xl text-kv-green"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 font-playfair">Breathtaking Location</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Located in Heerassagala, our villa offers panoramic
+                        views of the Kandy mountains, providing a tranquil escape from the bustling city just minutes
+                        away.</p>
+                </div>
+
+                <div class="text-center p-8 bg-kv-bg rounded-2xl border border-gray-100 opacity-0 animate-on-scroll hover-scale"
+                    data-animation="fade-in-up" style="animation-delay: 0.2s">
+                    <div
+                        class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-md">
+                        <i class="fa-solid fa-bell-concierge text-2xl text-kv-green"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 font-playfair">Exquisite Service</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Our attentive staff is committed to ensuring your
+                        stay is perfect, from arranging cultural tours to accommodating special dietary requests.</p>
+                </div>
+
+                <div class="text-center p-8 bg-kv-bg rounded-2xl border border-gray-100 opacity-0 animate-on-scroll hover-scale"
+                    data-animation="fade-in-up" style="animation-delay: 0.3s">
+                    <div
+                        class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-md">
+                        <i class="fa-solid fa-gem text-2xl text-kv-green"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 font-playfair">Modern Luxury</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Enjoy modern comforts like air-conditioning,
+                        high-speed WiFi, flat-screen TVs, and luxurious bath amenities integrated seamlessly with
+                        classic design.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-kv-dark text-white pt-20 pb-10 border-t-4 border-kv-gold">
+        <!-- Exact Same Footer -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-16">
+                <div>
+                    <div class="mb-6 inline-block bg-white p-2 pr-4 rounded-2xl shadow-lg">
+                        <a href="index.html" class="flex items-center gap-3">
+                            <img src="images/logo.jpg" alt="The Kandyan Villa Logo" class="h-14 w-auto rounded-xl">
+                            <span class="font-playfair text-xl font-bold text-kv-green">The Kandyan Villa</span>
+                        </a>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">A serene oasis in the hills of Heerassagala,
+                        offering luxury accommodation and traditional Sri Lankan hospitality just minutes from Kandy
+                        city center.</p>
+                    <div class="flex gap-4">
+                        <a href="https://www.facebook.com/share/1C2njgy4cU/" target="_blank" rel="noopener noreferrer"
+                            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-kv-gold hover:text-kv-dark transition-colors text-white"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-kv-gold hover:text-kv-dark transition-colors text-white"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-kv-gold hover:text-kv-dark transition-colors text-white"><i
+                                class="fa-brands fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-playfair font-bold mb-6 border-b border-white/20 pb-2 inline-block">Quick
+                        Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html"
+                                class="text-gray-400 hover:text-kv-gold transition-colors text-sm">Home</a></li>
+                        <li><a href="about.html"
+                                class="text-gray-400 hover:text-kv-gold transition-colors text-sm">About Us</a></li>
+                        <li><a href="rooms.html"
+                                class="text-gray-400 hover:text-kv-gold transition-colors text-sm">Rooms & Suites</a>
+                        </li>
+                        <li><a href="contact.html"
+                                class="text-gray-400 hover:text-kv-gold transition-colors text-sm">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-playfair font-bold mb-6 border-b border-white/20 pb-2 inline-block">Nearby
+                        Attractions</h4>
+                    <ul class="space-y-3">
+                        <li><span class="text-gray-400 text-sm block">Ceylon Tea Museum (2.8 km)</span></li>
+                        <li><span class="text-gray-400 text-sm block">Temple of the Tooth Relic (4.0 km)</span></li>
+                        <li><span class="text-gray-400 text-sm block">Kandy Lake (4.0 km)</span></li>
+                        <li><span class="text-gray-400 text-sm block">Royal Botanic Gardens (6.0 km)</span></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-playfair font-bold mb-6 border-b border-white/20 pb-2 inline-block">Contact
+                        Info</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot mt-1 text-kv-gold"></i>
+                            <span class="text-gray-400 text-sm">532/30, Heerassagala Road, Heerassagala, Kandy, Sri
+                                Lanka</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-kv-gold"></i>
+                            <a href="tel:+94812208208"
+                                class="text-gray-400 hover:text-kv-gold transition-colors text-sm">0812 208 208</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-kv-gold"></i>
+                            <a href="mailto:kandyanvilla111@gmail.com"
+                                class="text-gray-400 hover:text-kv-gold transition-colors text-sm">kandyanvilla111@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 text-sm">&copy; <span id="current-year"></span> The Kandyan Villa. All rights
+                    reserved. <a href="admin/login.html" class="opacity-0 hover:opacity-100 transition-opacity ml-2"
+                        title="Admin Portal"><i class="fa-solid fa-lock text-[10px]"></i></a></p>
+                <div class="flex gap-4">
+                    <a href="privacy.html" class="text-gray-500 hover:text-white text-sm">Privacy Policy</a>
+                    <a href="terms.html" class="text-gray-500 hover:text-white text-sm">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

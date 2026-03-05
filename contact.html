@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | The Kandyan Villa</title>
+    <meta name="description"
+        content="Get in touch with The Kandyan Villa. Book your stay, ask us questions, or find directions to our property in Heerassagala, Kandy.">
+    <!-- Tailwind CSS (via CDN with custom config) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind.config.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-kv-bg text-kv-dark antialiased">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-effect transition-all duration-300 py-2" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <img src="images/logo.jpg" alt="The Kandyan Villa Logo"
+                            class="h-12 md:h-14 w-auto rounded-xl mix-blend-multiply">
+                        <span class="font-playfair text-xl md:text-2xl font-bold text-kv-green">The Kandyan Villa</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-600 hover:text-kv-gold transition-colors">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-kv-gold transition-colors">About Us</a>
+                    <a href="rooms.html" class="text-gray-600 hover:text-kv-gold transition-colors">Rooms & Suites</a>
+                    <a href="contact.html"
+                        class="text-kv-green font-medium hover:text-kv-gold transition-colors">Contact</a>
+                    <a href="booking.html"
+                        class="bg-kv-green text-white px-6 py-2 rounded-full hover:bg-kv-green-light transition-colors transform hover:-translate-y-0.5 whitespace-nowrap">Book
+                        Now</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-kv-green hover:text-kv-gold focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white absolute w-full shadow-lg border-t border-gray-100">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="index.html" class="block px-3 py-2 text-gray-600 hover:text-kv-green">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-gray-600 hover:text-kv-green">About Us</a>
+                <a href="rooms.html" class="block px-3 py-2 text-gray-600 hover:text-kv-green">Rooms & Suites</a>
+                <a href="contact.html" class="block px-3 py-2 text-kv-green font-medium">Contact</a>
+                <a href="booking.html" class="block px-3 py-2 mt-4 text-center bg-kv-green text-white rounded-md">Book
+                    Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="images/b_lounge.jpg" alt="Contact Us Header Background" class="w-full h-full object-cover"
+                data-kv-img="contact_hero" />
+            <div class="absolute inset-0 page-header-overlay"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto opacity-0 animate-fade-in-up">
+            <h1 class="text-4xl md:text-6xl font-playfair font-bold text-white mb-4">Contact Us</h1>
+            <div class="flex items-center justify-center gap-2 text-gray-300 text-sm">
+                <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                <span><i class="fa-solid fa-chevron-right text-xs"></i></span>
+                <span class="text-kv-gold">Contact</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="py-24 bg-kv-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <!-- Contact Info -->
+                <div class="opacity-0 animate-on-scroll" data-animation="fade-in-up">
+                    <p class="text-kv-gold font-medium tracking-widest uppercase mb-2">Get In Touch</p>
+                    <h2 class="text-3xl md:text-4xl font-playfair font-bold text-kv-dark mb-6">We're Here for You</h2>
+                    <p class="text-gray-600 mb-10 leading-relaxed">Whether you have a question about booking, our
+                        location in Kandy, or any specific requests for your stay, our dedicated team is always ready to
+                        assist you.</p>
+
+                    <div class="space-y-8">
+                        <div
+                            class="flex items-start gap-6 p-6 bg-white rounded-2xl shadow-sm border border-gray-100 hover-scale">
+                            <div
+                                class="w-14 h-14 bg-kv-green/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-location-dot text-2xl text-kv-green"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2 font-playfair">Our Location</h4>
+                                <p class="text-gray-600 leading-relaxed">532/30, Heerassagala Road,<br>Heerassagala,
+                                    Kandy,<br>Sri Lanka</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex items-start gap-6 p-6 bg-white rounded-2xl shadow-sm border border-gray-100 hover-scale">
+                            <div
+                                class="w-14 h-14 bg-kv-green/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-phone text-2xl text-kv-green"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2 font-playfair">Phone Number</h4>
+                                <p class="text-gray-600 mb-1">For immediate assistance</p>
+                                <a href="tel:+94812208208"
+                                    class="text-xl font-bold text-kv-green hover:text-kv-gold transition-colors">0812
+                                    208 208</a>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex items-start gap-6 p-6 bg-white rounded-2xl shadow-sm border border-gray-100 hover-scale">
+                            <div
+                                class="w-14 h-14 bg-kv-green/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-envelope text-2xl text-kv-green"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2 font-playfair">Email Address</h4>
+                                <p class="text-gray-600 mb-1">Send us your queries anytime</p>
+                                <a href="mailto:kandyanvilla111@gmail.com"
+                                    class="text-lg font-bold text-kv-green hover:text-kv-gold transition-colors">kandyanvilla111@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact/Booking Form -->
+                <div class="bg-white rounded-3xl shadow-lg p-8 md:p-12 border border-gray-100 opacity-0 animate-on-scroll"
+                    data-animation="fade-in" id="booking-inquiry">
+                    <h3 class="text-2xl font-playfair font-bold text-kv-dark mb-6">Send an Inquiry or Book</h3>
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="firstName" class="block text-sm font-medium text-gray-700 mb-2">First
+                                    Name</label>
+                                <input type="text" id="firstName" name="firstName" required
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-kv-green focus:border-kv-green outline-none transition-all"
+                                    placeholder="John">
+                            </div>
+                            <div>
+                                <label for="lastName" class="block text-sm font-medium text-gray-700 mb-2">Last
+                                    Name</label>
+                                <input type="text" id="lastName" name="lastName" required
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-kv-green focus:border-kv-green outline-none transition-all"
+                                    placeholder="Doe">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email
+                                    Address</label>
+                                <input type="email" id="email" name="email" required
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-kv-green focus:border-kv-green outline-none transition-all"
+                                    placeholder="john@example.com">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone
+                                    Number</label>
+                                <input type="tel" id="phone" name="phone"
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-kv-green focus:border-kv-green outline-none transition-all"
+                                    placeholder="+1 234 567 890">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="interest" class="block text-sm font-medium text-gray-700 mb-2">I am interested
+                                in</label>
+                            <select id="interest" name="interest"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-kv-green focus:border-kv-green outline-none transition-all bg-white">
+                                <option value="booking">Making a Booking</option>
+                                <option value="inquiry">General Inquiry</option>
+                                <option value="event">Hosting an Event</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Your
+                                Message</label>
+                            <textarea id="message" name="message" rows="5" required
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-kv-green focus:border-kv-green outline-none transition-all resize-none"
+                                placeholder="Let us know dates, number of guests, or any specific questions..."></textarea>
+                        </div>
+
+                        <button type="submit" id="submit-btn"
+                            class="w-full bg-kv-green text-white font-medium py-4 rounded-xl hover:bg-kv-green-light transition-colors transform hover:-translate-y-1 shadow-md">
+                            Send Message
+                        </button>
+                        <div id="form-success"
+                            class="hidden mt-4 p-4 bg-green-50 text-green-700 rounded-lg text-center font-medium border border-green-200">
+                            Thank you for reaching out! Your message has been sent successfully. We will get back to you
+                            shortly.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="h-[500px] w-full bg-gray-200 relative">
+        <!-- Google Maps Embed - The Kandyan Villa, 532/30 Heerassagala Road -->
+        <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=80.6145%2C7.2580%2C80.6305%2C7.2740&layer=mapnik&marker=7.2660313%2C80.6225068"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+
+        <div class="absolute inset-0 pointer-events-none bg-kv-green/5 mix-blend-multiply"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-kv-dark text-white pt-20 pb-10 border-t-4 border-kv-gold">
+        <!-- Exact Same Footer -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-16">
+                <div>
+                    <div class="mb-6 inline-block bg-white p-2 pr-4 rounded-2xl shadow-lg">
+                        <a href="index.html" class="flex items-center gap-3">
+                            <img src="images/logo.jpg" alt="The Kandyan Villa Logo" class="h-14 w-auto rounded-xl">
+                            <span class="font-playfair text-xl font-bold text-kv-green">The Kandyan Villa</span>
+                        </a>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">A serene oasis in the hills of Heerassagala,
+                        offering luxury accommodation and traditional Sri Lankan hospitality just minutes from Kandy
+                        city center.</p>
+                    <div class="flex gap-4">
+                        <a href="https://www.facebook.com/share/1C2njgy4cU/" target="_blank" rel="noopener noreferrer"
+                            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-kv-gold hover:text-kv-dark transition-colors text-white"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-kv-gold hover:text-kv-dark transition-colors text-white"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-kv-gold hover:text-kv-dark transition-colors text-white"><i
+                                class="fa-brands fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-playfair font-bold mb-6 border-b border-white/20 pb-2 inline-block">Quick
+                        Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html"
+                                class="text-gray-400 hover:text-kv-gold transition-colors text-sm">Home</a></li>
+                        <li><a href="about.html"
+                                class="text-gray-400 hover:text-kv-gold transition-colors text-sm">About Us</a></li>
+                        <li><a href="rooms.html"
+                                class="text-gray-400 hover:text-kv-gold transition-colors text-sm">Rooms & Suites</a>
+                        </li>
+                        <li><a href="contact.html"
+                                class="text-gray-400 hover:text-kv-gold transition-colors text-sm">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-playfair font-bold mb-6 border-b border-white/20 pb-2 inline-block">Nearby
+                        Attractions</h4>
+                    <ul class="space-y-3">
+                        <li><span class="text-gray-400 text-sm block">Ceylon Tea Museum (2.8 km)</span></li>
+                        <li><span class="text-gray-400 text-sm block">Temple of the Tooth Relic (4.0 km)</span></li>
+                        <li><span class="text-gray-400 text-sm block">Kandy Lake (4.0 km)</span></li>
+                        <li><span class="text-gray-400 text-sm block">Royal Botanic Gardens (6.0 km)</span></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-playfair font-bold mb-6 border-b border-white/20 pb-2 inline-block">Contact
+                        Info</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot mt-1 text-kv-gold"></i>
+                            <span class="text-gray-400 text-sm">532/30, Heerassagala Road, Heerassagala, Kandy, Sri
+                                Lanka</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-kv-gold"></i>
+                            <a href="tel:+94812208208"
+                                class="text-gray-400 hover:text-kv-gold transition-colors text-sm">0812 208 208</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-kv-gold"></i>
+                            <a href="mailto:kandyanvilla111@gmail.com"
+                                class="text-gray-400 hover:text-kv-gold transition-colors text-sm">kandyanvilla111@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 text-sm">&copy; <span id="current-year"></span> The Kandyan Villa. All rights
+                    reserved. <a href="admin/login.html" class="opacity-0 hover:opacity-100 transition-opacity ml-2"
+                        title="Admin Portal"><i class="fa-solid fa-lock text-[10px]"></i></a></p>
+                <div class="flex gap-4">
+                    <a href="privacy.html" class="text-gray-500 hover:text-white text-sm">Privacy Policy</a>
+                    <a href="terms.html" class="text-gray-500 hover:text-white text-sm">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const contactForm = document.getElementById('contact-form');
+            const successMsg = document.getElementById('form-success');
+            const submitBtn = document.getElementById('submit-btn');
+
+            if (contactForm && successMsg) {
+                contactForm.addEventListener('submit', (e) => {
+                    e.preventDefault(); // Prevent page reload and 405 error
+
+                    if (submitBtn) submitBtn.textContent = 'Sending...';
+
+                    const formData = new FormData(contactForm);
+
+                    fetch("https://formsubmit.co/ajax/pasidumanuja393@gmail.com", {
+                        method: "POST",
+                        body: formData
+                    })
+                        .then(response => response.json())
+                        .then(data => {
+                            if (submitBtn) submitBtn.textContent = 'Send Message';
+                            successMsg.classList.remove('hidden');
+                            contactForm.reset();
+
+                            setTimeout(() => {
+                                successMsg.classList.add('hidden');
+                            }, 5000);
+                        })
+                        .catch(error => {
+                            if (submitBtn) submitBtn.textContent = 'Send Message';
+                            successMsg.classList.remove('hidden');
+                            successMsg.classList.replace('bg-green-50', 'bg-red-50');
+                            successMsg.classList.replace('text-green-700', 'text-red-700');
+                            successMsg.classList.replace('border-green-200', 'border-red-200');
+                            successMsg.innerHTML = 'Oops! There was a problem submitting your form.';
+
+                            setTimeout(() => {
+                                successMsg.classList.add('hidden');
+                                successMsg.classList.replace('bg-red-50', 'bg-green-50');
+                                successMsg.classList.replace('text-red-700', 'text-green-700');
+                                successMsg.classList.replace('border-red-200', 'border-green-200');
+                                successMsg.innerHTML = 'Thank you for reaching out! Your message has been sent successfully. We will get back to you shortly.';
+                            }, 5000);
+                        });
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

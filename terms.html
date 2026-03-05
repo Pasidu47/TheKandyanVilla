@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | The Kandyan Villa</title>
+    <meta name="description"
+        content="Read the Terms of Service for The Kandyan Villa. Understand the rules and conditions that govern your stay and use of our website.">
+    <!-- Tailwind CSS (via CDN with custom config) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind.config.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .policy-section {
+            border-left: 3px solid #d4af37;
+            padding-left: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .policy-section h3 {
+            color: #1f4e3d;
+        }
+
+        .policy-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #1f4e3d, #2d6a52);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #d4af37;
+            flex-shrink: 0;
+        }
+
+        .toc-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #1f4e3d;
+            font-size: 0.9rem;
+            padding: 0.4rem 0;
+            border-bottom: 1px solid #f0ede6;
+            transition: color 0.2s, gap 0.2s;
+        }
+
+        .toc-link:hover {
+            color: #d4af37;
+            gap: 0.75rem;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #1f4e3d08, #d4af3715);
+            border: 1px solid #d4af3740;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+
+<body class="bg-kv-bg text-kv-dark antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-effect transition-all duration-300 py-2" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <img src="images/logo.jpg" alt="The Kandyan Villa Logo"
+                            class="h-12 md:h-14 w-auto rounded-xl mix-blend-multiply">
+                        <span class="font-playfair text-xl md:text-2xl font-bold text-kv-green">The Kandyan Villa</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-600 hover:text-kv-gold transition-colors">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-kv-gold transition-colors">About Us</a>
+                    <a href="rooms.html" class="text-gray-600 hover:text-kv-gold transition-colors">Rooms &amp;
+                        Suites</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-kv-gold transition-colors">Contact</a>
+                    <a href="booking.html"
+                        class="bg-kv-green text-white px-6 py-2 rounded-full hover:bg-kv-green-light transition-colors transform hover:-translate-y-0.5 whitespace-nowrap">Book
+                        Now</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-kv-green hover:text-kv-gold focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white absolute w-full shadow-lg border-t border-gray-100">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="index.html" class="block px-3 py-2 text-gray-600 hover:text-kv-green">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-gray-600 hover:text-kv-green">About Us</a>
+                <a href="rooms.html" class="block px-3 py-2 text-gray-600 hover:text-kv-green">Rooms &amp; Suites</a>
+                <a href="contact.html" class="block px-3 py-2 text-gray-600 hover:text-kv-green">Contact</a>
+                <a href="booking.html" class="block px-3 py-2 mt-4 text-center bg-kv-green text-white rounded-md">Book
+                    Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="relative pt-28 pb-16 bg-kv-dark overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <img src="images/b_main.jpg" alt="" class="w-full h-full object-cover">
+            <div class="absolute inset-0 page-header-overlay"></div>
+        </div>
+        <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
+            <p class="text-kv-gold font-medium tracking-[0.2em] uppercase mb-3 text-sm">Legal</p>
+            <h1 class="text-4xl md:text-5xl font-playfair font-bold text-white mb-4">Terms of Service</h1>
+            <p class="text-gray-300 text-sm">Last updated: March 2026</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-12">
+
+                <!-- Table of Contents (Sidebar) -->
+                <aside class="lg:col-span-1">
+                    <div class="sticky top-24 bg-white rounded-2xl shadow-md p-6 border border-gray-100">
+                        <h2 class="font-playfair font-bold text-kv-dark text-lg mb-4">Contents</h2>
+                        <nav>
+                            <a href="#acceptance" class="toc-link"><i
+                                    class="fa-solid fa-chevron-right text-xs text-kv-gold"></i> Acceptance of Terms</a>
+                            <a href="#reservations" class="toc-link"><i
+                                    class="fa-solid fa-chevron-right text-xs text-kv-gold"></i> Reservations &amp;
+                                Booking</a>
+                            <a href="#cancellation" class="toc-link"><i
+                                    class="fa-solid fa-chevron-right text-xs text-kv-gold"></i> Cancellation Policy</a>
+                            <a href="#check-in" class="toc-link"><i
+                                    class="fa-solid fa-chevron-right text-xs text-kv-gold"></i> Check-In / Check-Out</a>
+                            <a href="#conduct" class="toc-link"><i
+                                    class="fa-solid fa-chevron-right text-xs text-kv-gold"></i> Guest Conduct</a>
+                            <a href="#liability" class="toc-link"><i
+                                    class="fa-solid fa-chevron-right text-xs text-kv-gold"></i> Liability</a>
+                            <a href="#payments" class="toc-link"><i
+                                    class="fa-solid fa-chevron-right text-xs text-kv-gold"></i> Payments</a>
+                            <a href="#amenities" class="toc-link"><i
+                                    class="fa-solid fa-chevron-right text-xs text-kv-gold"></i> Amenities &amp;
+                                Services</a>
+                            <a href="#changes" class="toc-link"><i
+                                    class="fa-solid fa-chevron-right text-xs text-kv-gold"></i> Changes to Terms</a>
+                            <a href="#contact-legal" class="toc-link"><i
+                                    class="fa-solid fa-chevron-right text-xs text-kv-gold"></i> Contact Us</a>
+                        </nav>
+                        <div class="mt-6 pt-4 border-t border-gray-100">
+                            <a href="privacy.html"
+                                class="flex items-center gap-2 text-sm text-kv-green hover:text-kv-gold transition-colors font-medium">
+                                <i class="fa-solid fa-shield-halved"></i> Privacy Policy
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Terms Content -->
+                <div class="lg:col-span-3">
+
+                    <!-- Intro Box -->
+                    <div class="highlight-box mb-10">
+                        <div class="flex items-start gap-4">
+                            <div class="policy-icon mt-1">
+                                <i class="fa-solid fa-file-contract text-lg"></i>
+                            </div>
+                            <div>
+                                <h2 class="font-playfair font-bold text-kv-dark text-xl mb-2">Welcome to The Kandyan
+                                    Villa</h2>
+                                <p class="text-gray-600 leading-relaxed text-sm">By accessing our website or making a
+                                    reservation, you agree to be bound by these Terms of Service. Please read them
+                                    carefully. These terms apply to all guests, visitors, and users of The Kandyan
+                                    Villa's website and accommodation services.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 1 -->
+                    <div id="acceptance" class="policy-section">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="policy-icon">
+                                <i class="fa-solid fa-handshake text-lg"></i>
+                            </div>
+                            <h3 class="font-playfair font-bold text-2xl">1. Acceptance of Terms</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed mb-3">By using this website or booking a stay at The
+                            Kandyan Villa, you confirm that you are at least 18 years of age and have read, understood,
+                            and agree to these Terms of Service in full.</p>
+                        <p class="text-gray-600 leading-relaxed">These terms constitute a legally binding agreement
+                            between you (the guest) and The Kandyan Villa, located at 532/30, Heerassagala Road,
+                            Heerassagala, Kandy, Sri Lanka. If you do not agree, please refrain from using our services.
+                        </p>
+                    </div>
+
+                    <!-- Section 2 -->
+                    <div id="reservations" class="policy-section">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="policy-icon">
+                                <i class="fa-solid fa-calendar-check text-lg"></i>
+                            </div>
+                            <h3 class="font-playfair font-bold text-2xl">2. Reservations &amp; Booking</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed mb-3">All reservations are subject to availability and
+                            confirmation. A booking is considered confirmed only upon receipt of a confirmation email or
+                            message from The Kandyan Villa.</p>
+                        <ul class="list-none space-y-2 text-gray-600 text-sm">
+                            <li class="flex items-start gap-2"><i
+                                    class="fa-solid fa-circle-check text-kv-gold mt-1 flex-shrink-0"></i> Accurate
+                                personal and contact details must be provided at the time of booking.</li>
+                            <li class="flex items-start gap-2"><i
+                                    class="fa-solid fa-circle-check text-kv-gold mt-1 flex-shrink-0"></i> The hotel
+                                reserves the right to reject any booking at its sole discretion.</li>
+                            <li class="flex items-start gap-2"><i
+                                    class="fa-solid fa-circle-check text-kv-gold mt-1 flex-shrink-0"></i> Room rates are
+                                quoted in Sri Lankan Rupees (LKR) and are inclusive of applicable taxes unless stated
+                                otherwise.</li>
+                            <li class="flex items-start gap-2"><i
+                                    class="fa-solid fa-circle-check text-kv-gold mt-1 flex-shrink-0"></i> Special
+                                requests (early check-in, dietary requirements, etc.) will be accommodated where
+                                possible but are not guaranteed.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Section 3 -->
+                    <div id="cancellation" class="policy-section">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="policy-icon">
+                                <i class="fa-solid fa-rotate-left text-lg"></i>
+                            </div>
+                            <h3 class="font-playfair font-bold text-2xl">3. Cancellation &amp; Refund Policy</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed mb-4">We understand that plans can change. Our standard
+                            cancellation policy is as follows:</p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
+                            <div class="bg-green-50 border border-green-200 rounded-xl p-4 text-center">
+                                <i class="fa-solid fa-circle-check text-green-600 text-2xl mb-2"></i>
+                                <p class="font-bold text-green-800 text-sm">48+ Hours Prior</p>
+                                <p class="text-green-600 text-xs mt-1">Full refund issued</p>
+                            </div>
+                            <div class="bg-yellow-50 border border-yellow-200 rounded-xl p-4 text-center">
+                                <i class="fa-solid fa-triangle-exclamation text-yellow-600 text-2xl mb-2"></i>
+                                <p class="font-bold text-yellow-800 text-sm">24–48 Hours Prior</p>
+                                <p class="text-yellow-600 text-xs mt-1">50% refund issued</p>
+                            </div>
+                            <div class="bg-red-50 border border-red-200 rounded-xl p-4 text-center">
+                                <i class="fa-solid fa-circle-xmark text-red-500 text-2xl mb-2"></i>
+                                <p class="font-bold text-red-800 text-sm">Less than 24 Hours</p>
+                                <p class="text-red-500 text-xs mt-1">No refund</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed">Refunds are processed to the original payment
+                            method within 7–14 business days. Cancellation fees may vary for bookings made through
+                            third-party platforms.</p>
+                    </div>
+
+                    <!-- Section 4 -->
+                    <div id="check-in" class="policy-section">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="policy-icon">
+                                <i class="fa-solid fa-clock text-lg"></i>
+                            </div>
+                            <h3 class="font-playfair font-bold text-2xl">4. Check-In &amp; Check-Out</h3>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4 mb-4">
+                            <div class="bg-white border border-gray-200 rounded-xl p-4 flex items-center gap-3">
+                                <i class="fa-solid fa-arrow-right-to-bracket text-kv-green text-2xl"></i>
+                                <div>
+                                    <p class="font-bold text-kv-dark text-sm">Check-In</p>
+                                    <p class="text-gray-500 text-sm">From 2:00 PM</p>
+                                </div>
+                            </div>
+                            <div class="bg-white border border-gray-200 rounded-xl p-4 flex items-center gap-3">
+                                <i class="fa-solid fa-arrow-right-from-bracket text-kv-green text-2xl"></i>
+                                <div>
+                                    <p class="font-bold text-kv-dark text-sm">Check-Out</p>
+                                    <p class="text-gray-500 text-sm">By 11:00 AM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed text-sm">Valid government-issued photo identification is
+                            required at check-in for all guests. Early check-in and late check-out are subject to
+                            availability and may incur additional charges.</p>
+                    </div>
+
+                    <!-- Section 5 -->
+                    <div id="conduct" class="policy-section">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="policy-icon">
+                                <i class="fa-solid fa-user-shield text-lg"></i>
+                            </div>
+                            <h3 class="font-playfair font-bold text-2xl">5. Guest Conduct</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed mb-3">All guests are expected to behave respectfully and
+                            in a manner that does not disturb other guests or staff. The management reserves the right
+                            to remove any guest who engages in disruptive, illegal, or inappropriate behaviour without a
+                            refund.</p>
+                        <ul class="list-none space-y-2 text-gray-600 text-sm">
+                            <li class="flex items-start gap-2"><i
+                                    class="fa-solid fa-ban text-red-400 mt-1 flex-shrink-0"></i> Smoking is strictly
+                                prohibited inside all rooms and indoor areas.</li>
+                            <li class="flex items-start gap-2"><i
+                                    class="fa-solid fa-ban text-red-400 mt-1 flex-shrink-0"></i> Pets are not permitted
+                                on the property.</li>
+                            <li class="flex items-start gap-2"><i
+                                    class="fa-solid fa-ban text-red-400 mt-1 flex-shrink-0"></i> Loud music or noise
+                                after 10:00 PM is not permitted.</li>
+                            <li class="flex items-start gap-2"><i
+                                    class="fa-solid fa-ban text-red-400 mt-1 flex-shrink-0"></i> Visitors must be
+                                registered at the front desk and are not permitted overnight without prior approval.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Section 6 -->
+                    <div id="liability" class="policy-section">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="policy-icon">
+                                <i class="fa-solid fa-scale-balanced text-lg"></i>
+                            </div>
+                            <h3 class="font-playfair font-bold text-2xl">6. Limitation of Liability</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed mb-3">The Kandyan Villa shall not be held liable for any
+                            loss, damage, injury, or theft of personal belongings during your stay. Guests are advised
+                            to use the in-room safe for valuables.</p>
+                        <p class="text-gray-600 leading-relaxed text-sm">The hotel's liability in any event shall not
+                            exceed the total amount paid by the guest for their stay. We are not responsible for any
+                            indirect, consequential, or incidental damages arising from the use of our facilities or
+                            website.</p>
+                    </div>
+
+                    <!-- Section 7 -->
+                    <div id="payments" class="policy-section">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="policy-icon">
+                                <i class="fa-solid fa-credit-card text-lg"></i>
+                            </div>
+                            <h3 class="font-playfair font-bold text-2xl">7. Payments</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed mb-3">All payments are processed securely. We accept
+                            major credit/debit cards, bank transfers, and online payment methods. A security deposit may
+                            be required upon check-in and will be refunded upon check-out subject to room inspection.
+                        </p>
+                        <p class="text-gray-600 leading-relaxed text-sm">Any damages to hotel property caused by the
+                            guest will be charged to the guest's account. All room rates are subject to change without
+                            notice until a booking is confirmed.</p>
+                    </div>
+
+                    <!-- Section 8 -->
+                    <div id="amenities" class="policy-section">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="policy-icon">
+                                <i class="fa-solid fa-star text-lg"></i>
+                            </div>
+                            <h3 class="font-playfair font-bold text-2xl">8. Amenities &amp; Services</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed mb-3">The hotel provides a variety of amenities
+                            including a swimming pool, restaurant, and free Wi-Fi. While we strive to ensure all
+                            facilities are available, we cannot guarantee uninterrupted access due to maintenance,
+                            seasonal, or safety requirements.</p>
+                        <p class="text-gray-600 leading-relaxed text-sm">Pool access is subject to swimming pool rules
+                            posted on the premises. Children must be supervised by an adult at all times in pool areas.
+                        </p>
+                    </div>
+
+                    <!-- Section 9 -->
+                    <div id="changes" class="policy-section">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="policy-icon">
+                                <i class="fa-solid fa-pen-to-square text-lg"></i>
+                            </div>
+                            <h3 class="font-playfair font-bold text-2xl">9. Changes to These Terms</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed">The Kandyan Villa reserves the right to update or
+                            modify these Terms of Service at any time without prior notice. Changes will be effective
+                            immediately upon posting to this page. Continued use of our website or services constitutes
+                            acceptance of the revised terms.</p>
+                    </div>
+
+                    <!-- Section 10 -->
+                    <div id="contact-legal" class="policy-section">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="policy-icon">
+                                <i class="fa-solid fa-envelope text-lg"></i>
+                            </div>
+                            <h3 class="font-playfair font-bold text-2xl">10. Contact Us</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed mb-4">If you have any questions about these Terms of
+                            Service, please contact us:</p>
+                        <div class="bg-white border border-gray-200 rounded-xl p-6 space-y-3">
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-location-dot text-kv-gold w-5 text-center"></i>
+                                <span class="text-gray-600 text-sm">532/30, Heerassagala Road, Heerassagala, Kandy, Sri
+                                    Lanka</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-phone text-kv-gold w-5 text-center"></i>
+                                <a href="tel:+94812208208"
+                                    class="text-kv-green hover:text-kv-gold transition-colors text-sm">0812 208 208</a>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-envelope text-kv-gold w-5 text-center"></i>
+                                <a href="mailto:kandyanvilla111@gmail.com"
+                                    class="text-kv-green hover:text-kv-gold transition-colors text-sm">kandyanvilla111@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-kv-dark text-white pt-20 pb-10 border-t-4 border-kv-gold">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-16">
+                <div>
+                    <div class="mb-6 inline-block bg-white p-2 pr-4 rounded-2xl shadow-lg">
+                        <a href="index.html" class="flex items-center gap-3">
+                            <img src="images/logo.jpg" alt="The Kandyan Villa Logo" class="h-14 w-auto rounded-xl">
+                            <span class="font-playfair text-xl font-bold text-kv-green">The Kandyan Villa</span>
+                        </a>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">A serene oasis in the hills of Heerassagala,
+                        offering luxury accommodation and traditional Sri Lankan hospitality just minutes from Kandy
+                        city center.</p>
+                    <div class="flex gap-4">
+                        <a href="https://www.facebook.com/share/1C2njgy4cU/" target="_blank" rel="noopener noreferrer"
+                            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-kv-gold hover:text-kv-dark transition-colors text-white"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-kv-gold hover:text-kv-dark transition-colors text-white"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-kv-gold hover:text-kv-dark transition-colors text-white"><i
+                                class="fa-brands fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-playfair font-bold mb-6 border-b border-white/20 pb-2 inline-block">Quick
+                        Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html"
+                                class="text-gray-400 hover:text-kv-gold transition-colors text-sm">Home</a></li>
+                        <li><a href="about.html"
+                                class="text-gray-400 hover:text-kv-gold transition-colors text-sm">About Us</a></li>
+                        <li><a href="rooms.html"
+                                class="text-gray-400 hover:text-kv-gold transition-colors text-sm">Rooms &amp;
+                                Suites</a></li>
+                        <li><a href="contact.html"
+                                class="text-gray-400 hover:text-kv-gold transition-colors text-sm">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-playfair font-bold mb-6 border-b border-white/20 pb-2 inline-block">Nearby
+                        Attractions</h4>
+                    <ul class="space-y-3">
+                        <li><span class="text-gray-400 text-sm block">Ceylon Tea Museum (2.8 km)</span></li>
+                        <li><span class="text-gray-400 text-sm block">Temple of the Tooth Relic (4.0 km)</span></li>
+                        <li><span class="text-gray-400 text-sm block">Kandy Lake (4.0 km)</span></li>
+                        <li><span class="text-gray-400 text-sm block">Royal Botanic Gardens (6.0 km)</span></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-playfair font-bold mb-6 border-b border-white/20 pb-2 inline-block">Contact
+                        Info</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot mt-1 text-kv-gold"></i>
+                            <span class="text-gray-400 text-sm">532/30, Heerassagala Road, Heerassagala, Kandy, Sri
+                                Lanka</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-kv-gold"></i>
+                            <a href="tel:+94812208208"
+                                class="text-gray-400 hover:text-kv-gold transition-colors text-sm">0812 208 208</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-kv-gold"></i>
+                            <a href="mailto:kandyanvilla111@gmail.com"
+                                class="text-gray-400 hover:text-kv-gold transition-colors text-sm">kandyanvilla111@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 text-sm">&copy; <span id="current-year"></span> The Kandyan Villa. All rights
+                    reserved. <a href="admin/login.html" class="opacity-0 hover:opacity-100 transition-opacity ml-2"
+                        title="Admin Portal"><i class="fa-solid fa-lock text-[10px]"></i></a></p>
+                <div class="flex gap-4">
+                    <a href="privacy.html" class="text-gray-500 hover:text-white text-sm">Privacy Policy</a>
+                    <a href="terms.html" class="text-white text-sm font-medium">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
